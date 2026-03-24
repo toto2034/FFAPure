@@ -1,0 +1,59 @@
+# Shared premade kit for Crystal mode.
+# Only one premade is loaded for each mode and it is LOAD-only in the GUI.
+
+premade-kit:
+  display-name: '&#b84dffCrystal Ranked'
+  icon:
+    material: END_CRYSTAL
+    name: '&#b84dffCrystal Ranked'
+    lore:
+      - '&7Competitive crystal preset'
+      - '&aLEFT CLICK TO LOAD'
+  inventory:
+    "0":
+      material: END_CRYSTAL
+      amount: 16
+      name: '&dEnd Crystal'
+    "1":
+      material: OBSIDIAN
+      amount: 32
+      name: '&7Obsidian'
+    "2":
+      material: NETHERITE_SWORD
+      model_data: 1001
+      name: '&x&1&3&5&8&0&0Crystal Blade'
+      enchantments:
+        DAMAGE_ALL: 5
+        FIRE_ASPECT: 2
+    "3":
+      material: GOLDEN_APPLE
+      amount: 16
+    "8":
+      material: TOTEM_OF_UNDYING
+  armor:
+    boots:
+      material: NETHERITE_BOOTS
+      enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+    leggings:
+      material: NETHERITE_LEGGINGS
+      enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+    chestplate:
+      material: NETHERITE_CHESTPLATE
+      enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+    helmet:
+      material: NETHERITE_HELMET
+      enchantments:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+  offhand:
+    material: TOTEM_OF_UNDYING
+  enderchest:
+    "0":
+      material: OBSIDIAN
+      amount: 64

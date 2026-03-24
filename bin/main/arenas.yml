@@ -1,0 +1,7 @@
+arenas:
+  arena1:
+    name: arena1
+    spawn-location:
+    spawn-points: []
+    flags:
+      random-spawn: true

@@ -1,0 +1,36 @@
+# Shared premade kit for Guns mode.
+# Only one premade is loaded for each mode and it is LOAD-only in the GUI.
+
+premade-kit:
+  display-name: '&#ffb347Rifle Core'
+  icon:
+    material: BOW
+    name: '&#ffb347Rifle Core'
+    lore:
+      - '&7Shared rifle preset for all players'
+      - '&aLEFT CLICK TO LOAD'
+  inventory:
+    "0":
+      material: BOW
+      enchantments:
+        ARROW_DAMAGE: 4
+        ARROW_INFINITE: 1
+    "1":
+      material: ARROW
+      amount: 1
+    "2":
+      material: IRON_SWORD
+      enchantments:
+        DAMAGE_ALL: 2
+    "8":
+      material: GOLDEN_APPLE
+      amount: 4
+  armor:
+    boots:
+      material: IRON_BOOTS
+    leggings:
+      material: IRON_LEGGINGS
+    chestplate:
+      material: IRON_CHESTPLATE
+    helmet:
+      material: IRON_HELMET

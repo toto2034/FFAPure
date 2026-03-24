@@ -1,0 +1,54 @@
+# Global plugin configuration.
+# Per-mode files are loaded dynamically from:
+# plugins/FFAPure/modes/<mode>/
+
+defaults:
+  # Default delay before forced respawn in FFA modes.
+  respawn-delay-seconds: 1
+  # Default spawn protection duration applied after join/respawn.
+  spawn-protection-seconds: 3
+
+# If true, players cannot drop items while they are inside an active FFA mode.
+anti-item-drop: true
+
+# Commands blocked only while a player is actively inside an FFA world.
+blocked-commands:
+  - home
+  - warp
+
+# Commands that automatically trigger the same cleanup as /ffa leave.
+# Write them without slash; matching is case-insensitive.
+auto-leave-commands:
+  - lobby
+  - spawn
+  - hub
+
+anti-farm:
+  # Prevent repeated kill farming between the same two players.
+  enabled: true
+  # If the same killer kills the same victim again before this cooldown, the kill is ignored for streak logic.
+  kill-cooldown-seconds: 20
+
+killstreak:
+  # Broadcast a streak message every X kills.
+  broadcast-every: 5
+
+commands:
+  # If true, FFA-only commands work only inside configured FFA worlds.
+  # Exception: /ffa join <mode> remains available from normal worlds.
+  restrict-outside-ffa-worlds: true
+
+restricted-worlds:
+  # Worlds where creating new modes is blocked.
+  # Useful for hub/spawn worlds where players should only use /ffa join <mode>.
+  creation-blocked:
+    - world
+    - spawn
+    - hub
+
+reload:
+  # If true, open FFAPure GUIs are closed before the reload finishes.
+  # This prevents players from interacting with stale slot mappings or outdated buttons.
+  close-open-guis: true
+  # If true, players whose GUI was closed receive a short info message.
+  notify-player-on-gui-close: true

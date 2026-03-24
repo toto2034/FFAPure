@@ -1,0 +1,40 @@
+name: FFAPure
+version: '${version}'
+main: it.tdevelopments.ffapure.FFAPlugin
+api-version: '1.21'
+author: Codex
+description: Modalita PvP FFA con arene, kit, scoreboard e statistiche.
+commands:
+  ffa:
+    description: Main command for the FFA plugin
+    usage: /ffa
+    permission: ffa.use
+permissions:
+  ffa.use:
+    description: Base permission for the plugin
+    default: true
+  ffa.join:
+    description: Join the active FFA arena
+    default: true
+  ffa.kit:
+    description: Open kit selector and choose kits
+    default: true
+  ffa.stats:
+    description: View personal stats and rankings
+    default: true
+  ffa.admin:
+    description: Full admin access
+    default: op
+    children:
+      ffa.admin.arena: true
+      ffa.admin.kit: true
+      ffa.admin.reload: true
+  ffa.admin.arena:
+    description: Arena management commands
+    default: op
+  ffa.admin.kit:
+    description: Kit management commands
+    default: op
+  ffa.admin.reload:
+    description: Reload plugin configuration
+    default: op

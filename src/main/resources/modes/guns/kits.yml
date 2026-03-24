@@ -1,0 +1,88 @@
+# Player template kits for Guns mode.
+# These are used as defaults when creating or resetting custom layouts.
+
+templates:
+  guns_pistol:
+    display-name: '&#ffb347Pistol'
+    icon: CROSSBOW
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: CROSSBOW
+      - ==: org.bukkit.inventory.ItemStack
+        type: ARROW
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        type: STONE_SWORD
+  guns_rifle:
+    display-name: '&#ffb347Rifle'
+    icon: BOW
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: BOW
+      - ==: org.bukkit.inventory.ItemStack
+        type: ARROW
+        amount: 32
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_SWORD
+  guns_custom_blaster:
+    display-name: '&x&1&3&5&8&0&0Blaster'
+    icon: DIAMOND_HOE
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_HOE
+        meta:
+          ==: ItemMeta
+          display-name: '&x&1&3&5&8&0&0Blaster'
+  guns_premium_shotgun:
+    display-name: '&6Guns Premium I'
+    icon: NETHERITE_SWORD
+    permission: ffapure.kit.premium.1
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: CROSSBOW
+      - ==: org.bukkit.inventory.ItemStack
+        type: ARROW
+        amount: 24
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_SWORD
+  guns_premium_demolition:
+    display-name: '&6Guns Premium II'
+    icon: TNT
+    permission: ffapure.kit.premium.2
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: BOW
+      - ==: org.bukkit.inventory.ItemStack
+        type: ARROW
+        amount: 32
+      - ==: org.bukkit.inventory.ItemStack
+        type: TNT
+        amount: 8
+      - ==: org.bukkit.inventory.ItemStack
+        type: FLINT_AND_STEEL
+  guns_premium_trident:
+    display-name: '&6Guns Premium III'
+    icon: TRIDENT
+    permission: ffapure.kit.premium.3
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: TRIDENT
+      - ==: org.bukkit.inventory.ItemStack
+        type: CROSSBOW
+      - ==: org.bukkit.inventory.ItemStack
+        type: ARROW
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_SWORD
+  guns_premium_firework:
+    display-name: '&6Guns Premium IV'
+    icon: FIREWORK_ROCKET
+    permission: ffapure.kit.premium.4
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: CROSSBOW
+      - ==: org.bukkit.inventory.ItemStack
+        type: FIREWORK_ROCKET
+        amount: 24
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD

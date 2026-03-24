@@ -1,0 +1,180 @@
+# Player template kits for Crystal mode.
+# These are used as defaults when creating or resetting custom layouts.
+
+templates:
+  crystal_anchor:
+    display-name: '&#b84dffAnchor'
+    icon: RESPAWN_ANCHOR
+    lore:
+      - '&7Respawn anchor pressure'
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: RESPAWN_ANCHOR
+        amount: 4
+      - ==: org.bukkit.inventory.ItemStack
+        type: GLOWSTONE
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_SWORD
+      - ==: org.bukkit.inventory.ItemStack
+        type: TOTEM_OF_UNDYING
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_HELMET
+  crystal_classic:
+    display-name: '&#b84dffClassic Crystal'
+    icon: END_CRYSTAL
+    lore:
+      - '&7Classic crystal PvP'
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: END_CRYSTAL
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        type: OBSIDIAN
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_SWORD
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLDEN_APPLE
+        amount: 16
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_HELMET
+  crystal_custom_model:
+    display-name: '&x&1&3&5&8&0&0Custom Crystal Sword'
+    icon: DIAMOND_SWORD
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_SWORD
+        meta:
+          ==: ItemMeta
+          display-name: '&x&1&3&5&8&0&0Crystal Blade'
+  crystal_premium_sword:
+    display-name: '&6Crystal Premium I'
+    icon: NETHERITE_SWORD
+    permission: ffapure.kit.premium.1
+    lore:
+      - '&7Premium sword pressure'
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_SWORD
+      - ==: org.bukkit.inventory.ItemStack
+        type: END_CRYSTAL
+        amount: 24
+      - ==: org.bukkit.inventory.ItemStack
+        type: OBSIDIAN
+        amount: 32
+      - ==: org.bukkit.inventory.ItemStack
+        type: TOTEM_OF_UNDYING
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLDEN_APPLE
+        amount: 16
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_HELMET
+  crystal_premium_axe:
+    display-name: '&6Crystal Premium II'
+    icon: NETHERITE_AXE
+    permission: ffapure.kit.premium.2
+    lore:
+      - '&7Premium axe pressure'
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_AXE
+      - ==: org.bukkit.inventory.ItemStack
+        type: END_CRYSTAL
+        amount: 20
+      - ==: org.bukkit.inventory.ItemStack
+        type: OBSIDIAN
+        amount: 32
+      - ==: org.bukkit.inventory.ItemStack
+        type: TOTEM_OF_UNDYING
+      - ==: org.bukkit.inventory.ItemStack
+        type: SPLASH_POTION
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_HELMET
+  crystal_premium_totem:
+    display-name: '&6Crystal Premium III'
+    icon: TOTEM_OF_UNDYING
+    permission: ffapure.kit.premium.3
+    lore:
+      - '&7Premium totem sustain'
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_SWORD
+      - ==: org.bukkit.inventory.ItemStack
+        type: TOTEM_OF_UNDYING
+        amount: 2
+      - ==: org.bukkit.inventory.ItemStack
+        type: END_CRYSTAL
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        type: OBSIDIAN
+        amount: 24
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLDEN_APPLE
+        amount: 24
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_HELMET
+  crystal_premium_gap:
+    display-name: '&6Crystal Premium IV'
+    icon: ENCHANTED_GOLDEN_APPLE
+    permission: ffapure.kit.premium.4
+    lore:
+      - '&7Premium healing stock'
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: NETHERITE_SWORD
+      - ==: org.bukkit.inventory.ItemStack
+        type: ENCHANTED_GOLDEN_APPLE
+        amount: 2
+      - ==: org.bukkit.inventory.ItemStack
+        type: END_CRYSTAL
+        amount: 24
+      - ==: org.bukkit.inventory.ItemStack
+        type: OBSIDIAN
+        amount: 32
+      - ==: org.bukkit.inventory.ItemStack
+        type: TOTEM_OF_UNDYING
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_HELMET

@@ -1,0 +1,37 @@
+active-arena: arena1
+default-kit: Warrior
+respawn-delay-seconds: 1
+spawn-protection-seconds: 3
+random-spawn: true
+clear-inventory-on-death: true
+heal-on-respawn: true
+anti-item-drop: true
+blocked-commands:
+  - /spawn
+  - /home
+  - /warp
+global-lobby:
+scoreboard:
+  enabled: true
+  title: '&6&lFFA'
+  lines:
+    - '&7Player: &f%player%'
+    - '&7Arena: &f%arena%'
+    - '&7Kit: &f%kit%'
+    - '&7Kills: &f%kills%'
+    - '&7Deaths: &f%deaths%'
+    - '&7Streak: &f%streak%'
+    - '&8&m----------------'
+kit-gui:
+  enabled: true
+  open-on-respawn: true
+  title: '&8Select Your Kit'
+  size: 27
+anti-farm:
+  enabled: true
+  kill-cooldown-seconds: 20
+anti-spawn-kill:
+  radius: 8.0
+  time-seconds: 5
+killstreak:
+  broadcast-every: 5

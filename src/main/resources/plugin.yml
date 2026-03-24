@@ -1,0 +1,68 @@
+name: FFAPure
+version: '${version}'
+main: it.tdevelopments.ffapure.FFAPlugin
+api-version: '1.21'
+author: Codex
+description: Multi-mode Paper FFA with per-mode configs, kit editor and mode-scoped categories
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  ffa:
+    description: Main FFA command
+    usage: /ffa help
+    permission: ffa.use
+  kit:
+    description: Opens the kit browser for the current mode or a specific mode
+    usage: /kit [mode]
+    permission: ffa.kit
+
+permissions:
+  ffa.use:
+    default: true
+  ffa.join:
+    default: true
+  ffa.kit:
+    default: true
+  ffa.mode.guns:
+    default: true
+  ffa.mode.crystal:
+    default: true
+  ffapure.kit.premium:
+    default: false
+    children:
+      ffapure.kit.premium.1: true
+      ffapure.kit.premium.2: true
+      ffapure.kit.premium.3: true
+      ffapure.kit.premium.4: true
+  ffapure.kit.vip:
+    default: false
+    children:
+      ffapure.kit.premium: true
+  ffapure.vip:
+    default: false
+    children:
+      ffapure.kit.premium: true
+  ffapure.kit.premium.1:
+    default: false
+  ffapure.kit.premium.2:
+    default: false
+  ffapure.kit.premium.3:
+    default: false
+  ffapure.kit.premium.4:
+    default: false
+  ffa.admin:
+    default: op
+    children:
+      ffa.admin.reload: true
+      ffa.admin.mode: true
+      ffa.admin.spawn: true
+      ffa.admin.kit: true
+  ffa.admin.reload:
+    default: op
+  ffa.admin.mode:
+    default: op
+  ffa.admin.spawn:
+    default: op
+  ffa.admin.kit:
+    default: op

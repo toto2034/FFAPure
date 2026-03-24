@@ -1,0 +1,51 @@
+# Core configuration for Crystal mode.
+# A world is treated as FFA only if:
+# 1. it is listed in enabled-worlds
+# 2. ffa-spawn is configured
+
+id: crystal
+display-name: '&#b84dffCrystal'
+
+enabled-worlds:
+  - world_crystal
+
+ffa-spawn:
+  ==: org.bukkit.Location
+  world: world_crystal
+  x: 10.5
+  y: 75.0
+  z: 10.5
+  pitch: 0.0
+  yaw: 180.0
+
+lobby-spawn:
+  ==: org.bukkit.Location
+  world: world
+  x: 5.5
+  y: 70.0
+  z: 5.5
+  pitch: 0.0
+  yaw: 0.0
+
+# Number of custom layouts available for each player in this mode.
+layout-slots: 7
+layout-names:
+  - '&#b84dffCrystal Kit 1'
+  - '&#b84dffCrystal Kit 2'
+  - '&#b84dffCrystal Kit 3'
+  - '&6Crystal Premium 1'
+  - '&6Crystal Premium 2'
+  - '&6Crystal Premium 3'
+  - '&6Crystal Premium 4'
+
+settings:
+  respawn-delay-seconds: 1
+  spawn-protection-seconds: 2
+  clear-inventory-on-join: true
+  clear-inventory-on-respawn: true
+  heal-on-respawn: true
+
+kit-selection:
+  open-on-first-join: true
+  open-on-respawn: false
+  give-last-selected-kit-on-respawn: true

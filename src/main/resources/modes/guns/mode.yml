@@ -1,0 +1,47 @@
+# Core configuration for Guns mode.
+
+id: guns
+display-name: '&#ffb347Guns'
+
+enabled-worlds:
+  - world_guns
+
+ffa-spawn:
+  ==: org.bukkit.Location
+  world: world_guns
+  x: 0.5
+  y: 80.0
+  z: 0.5
+  pitch: 0.0
+  yaw: 0.0
+
+lobby-spawn:
+  ==: org.bukkit.Location
+  world: world
+  x: 0.5
+  y: 70.0
+  z: 0.5
+  pitch: 0.0
+  yaw: 0.0
+
+layout-slots: 7
+layout-names:
+  - '&#ffb347Guns Kit 1'
+  - '&#ffb347Guns Kit 2'
+  - '&#ffb347Guns Kit 3'
+  - '&6Guns Premium 1'
+  - '&6Guns Premium 2'
+  - '&6Guns Premium 3'
+  - '&6Guns Premium 4'
+
+settings:
+  respawn-delay-seconds: 1
+  spawn-protection-seconds: 3
+  clear-inventory-on-join: true
+  clear-inventory-on-respawn: true
+  heal-on-respawn: true
+
+kit-selection:
+  open-on-first-join: true
+  open-on-respawn: false
+  give-last-selected-kit-on-respawn: true

@@ -1,0 +1,398 @@
+# GUI definitions for Crystal mode.
+# All GUI slots are 0-based.
+
+GUI_KIT_BROWSER:
+  schema-version: 1
+  title: '&#b84dffCrystal Kit Browser'
+  size: 54
+  fill-item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: ' '
+  normal-kits:
+    kit_1:
+      layout-slot: 1
+      slot: 10
+      material: CHEST
+      name: '&#b84dffKit 1'
+      lore:
+        - '&aLEFT CLICK TO LOAD'
+        - '&eRIGHT CLICK TO EDIT'
+    kit_2:
+      layout-slot: 2
+      slot: 11
+      material: CHEST
+      name: '&#b84dffKit 2'
+      lore:
+        - '&aLEFT CLICK TO LOAD'
+        - '&eRIGHT CLICK TO EDIT'
+    kit_3:
+      layout-slot: 3
+      slot: 12
+      material: CHEST
+      name: '&#b84dffKit 3'
+      lore:
+        - '&aLEFT CLICK TO LOAD'
+        - '&eRIGHT CLICK TO EDIT'
+  premium-kits:
+    premium_1:
+      layout-slot: 4
+      slot: 13
+      material: CHEST
+      name: '&6Premium Kit 1'
+      lore:
+        - '&aLEFT CLICK TO LOAD'
+        - '&eRIGHT CLICK TO EDIT'
+      permissions:
+        - ffapure.vip
+        - ffapure.kit.premium
+        - ffapure.kit.vip
+        - ffapure.kit.premium.1
+      locked-message: premium-kit-locked
+    premium_2:
+      layout-slot: 5
+      slot: 14
+      material: CHEST
+      name: '&6Premium Kit 2'
+      lore:
+        - '&aLEFT CLICK TO LOAD'
+        - '&eRIGHT CLICK TO EDIT'
+      permissions:
+        - ffapure.vip
+        - ffapure.kit.premium
+        - ffapure.kit.vip
+        - ffapure.kit.premium.2
+      locked-message: premium-kit-locked
+    premium_3:
+      layout-slot: 6
+      slot: 15
+      material: CHEST
+      name: '&6Premium Kit 3'
+      lore:
+        - '&aLEFT CLICK TO LOAD'
+        - '&eRIGHT CLICK TO EDIT'
+      permissions:
+        - ffapure.vip
+        - ffapure.kit.premium
+        - ffapure.kit.vip
+        - ffapure.kit.premium.3
+      locked-message: premium-kit-locked
+    premium_4:
+      layout-slot: 7
+      slot: 16
+      material: CHEST
+      name: '&6Premium Kit 4'
+      lore:
+        - '&aLEFT CLICK TO LOAD'
+        - '&eRIGHT CLICK TO EDIT'
+      permissions:
+        - ffapure.vip
+        - ffapure.kit.premium
+        - ffapure.kit.vip
+        - ffapure.kit.premium.4
+      locked-message: premium-kit-locked
+  premade-kit:
+    slot: 38
+    material: BOOKSHELF
+    glow: true
+    name: '&6Premade Kit'
+    lore:
+      - '&7Premade Kit'
+      - '&aLeft click to load'
+  premade-kit-disabled:
+    slot: 38
+    material: BARRIER
+    name: '&cPremade Kit Unavailable'
+    lore:
+      - '&7No premade kit is configured'
+      - '&7for this mode.'
+  clear-inventory:
+    slot: 42
+    material: REDSTONE_BLOCK
+    name: '&cClear Inventory'
+    lore:
+      - '&7Clear Inventory'
+
+GUI_KIT_EDITOR:
+  schema-version: 1
+  title: '&#b84dffEditing Player Kit &7- &f{layout_name}'
+  size: 54
+  fill-item:
+    material: AIR
+    name: ' '
+  decorative-items:
+    top-left:
+      slot: 0
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    top-middle-left:
+      slot: 5
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    top-middle-center:
+      slot: 6
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    slot-8-technical-filler:
+      slot: 8
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    bottom-left:
+      slot: 45
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    bottom-center-left:
+      slot: 46
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    bottom-center:
+      slot: 47
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    bottom-right-left:
+      slot: 51
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    bottom-right-center:
+      slot: 52
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+    bottom-right:
+      slot: 53
+      material: DARK_GRAY_STAINED_GLASS_PANE
+      name: '&8'
+  editable-slots:
+    armor:
+      helmet: 1
+      chestplate: 2
+      leggings: 3
+      boots: 4
+    offhand: 7
+    content:
+      "9": 9
+      "10": 10
+      "11": 11
+      "12": 12
+      "13": 13
+      "14": 14
+      "15": 15
+      "16": 16
+      "17": 17
+      "18": 18
+      "19": 19
+      "20": 20
+      "21": 21
+      "22": 22
+      "23": 23
+      "24": 24
+      "25": 25
+      "26": 26
+      "27": 27
+      "28": 28
+      "29": 29
+      "30": 30
+      "31": 31
+      "32": 32
+      "33": 33
+      "34": 34
+      "35": 35
+      "8": 36
+    hotbar:
+      "0": 37
+      "1": 38
+      "2": 39
+      "3": 40
+      "4": 41
+      "5": 42
+      "6": 43
+      "7": 44
+  slot-preview:
+    empty-items:
+      default:
+        material: AIR
+      hotbar:
+        material: AIR
+      content:
+        material: AIR
+      helmet:
+        material: CYAN_STAINED_GLASS_PANE
+        name: '&b '
+      chestplate:
+        material: CYAN_STAINED_GLASS_PANE
+        name: '&b '
+      leggings:
+        material: CYAN_STAINED_GLASS_PANE
+        name: '&b '
+      boots:
+        material: CYAN_STAINED_GLASS_PANE
+        name: '&b '
+      offhand:
+        material: ORANGE_STAINED_GLASS_PANE
+        name: '&6 '
+    empty-lore:
+      default:
+        - '&7Content Slot'
+      hotbar:
+        - '&7Hotbar Slot'
+      content:
+        - '&7Content Slot'
+      helmet:
+        - '&7Helmet Slot'
+      chestplate:
+        - '&7Chestplate Slot'
+      leggings:
+        - '&7Leggings Slot'
+      boots:
+        - '&7Boots Slot'
+      offhand:
+        - '&7Second hand slot'
+    occupied-lore:
+      default:
+        - '&7Content Slot'
+        - '&eLeft click to pick up / place'
+        - '&eRight click to browse items'
+      hotbar:
+        - '&7Hotbar Slot'
+        - '&eLeft click to pick up / place'
+        - '&eRight click to browse items'
+      content:
+        - '&7Content Slot'
+        - '&eLeft click to pick up / place'
+        - '&eRight click to browse items'
+      helmet:
+        - '&7Helmet Slot'
+        - '&eLeft click to pick up / place'
+        - '&eRight click to browse items'
+      chestplate:
+        - '&7Chestplate Slot'
+        - '&eLeft click to pick up / place'
+        - '&eRight click to browse items'
+      leggings:
+        - '&7Leggings Slot'
+        - '&eLeft click to pick up / place'
+        - '&eRight click to browse items'
+      boots:
+        - '&7Boots Slot'
+        - '&eLeft click to pick up / place'
+        - '&eRight click to browse items'
+      offhand:
+        - '&7Second hand slot'
+        - '&eLeft click to pick up / place'
+        - '&eRight click to browse items'
+  buttons:
+    save:
+      slot: 48
+      action: SAVE_LAYOUT
+      material: LIME_DYE
+      name: '&aSave'
+      lore:
+        - '&7Save'
+    import:
+      slot: 49
+      action: IMPORT_LAYOUT
+      material: ARMOR_STAND
+      name: '&eImport'
+      lore:
+        - '&7Import'
+    reset:
+      slot: 50
+      action: RESET_LAYOUT
+      material: ANVIL
+      name: '&6Reset'
+      lore:
+        - '&7Reset'
+
+GUI_ITEM_CATEGORIES:
+  title: '&#b84dffCrystal Categories'
+  size: 54
+  fill-item:
+    material: ORANGE_STAINED_GLASS_PANE
+    name: ' '
+  category-slots:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+  buttons:
+    back:
+      slot: 53
+      action: BACK_TO_EDITOR
+      material: ARROW
+      name: '&eBack'
+  categories:
+    crystals:
+      display-name: '&dCrystals'
+      icon:
+        material: END_CRYSTAL
+        name: '&dCrystals'
+      items:
+        crystal:
+          material: END_CRYSTAL
+          amount: 8
+          name: '&dEnd Crystal'
+    anchors:
+      display-name: '&5Anchors'
+      icon:
+        material: RESPAWN_ANCHOR
+        name: '&5Anchors'
+      items:
+        anchor:
+          material: RESPAWN_ANCHOR
+          amount: 2
+          name: '&5Respawn Anchor'
+    blocks:
+      display-name: '&7Blocks'
+      icon:
+        material: OBSIDIAN
+        name: '&7Blocks'
+      items:
+        obsidian:
+          material: OBSIDIAN
+          amount: 16
+          name: '&7Obsidian'
+    swords:
+      display-name: '&cSwords'
+      icon:
+        material: NETHERITE_SWORD
+        name: '&cSwords'
+      items:
+        sword:
+          material: NETHERITE_SWORD
+          model_data: 1001
+          name: '&x&1&3&5&8&0&0Crystal Blade'
+          lore:
+            - '&7Blade for crystal fights'
+          enchantments:
+            DAMAGE_ALL: 5
+            FIRE_ASPECT: 2
+          item-flags:
+            - HIDE_ATTRIBUTES
+
+GUI_ITEM_PICKER:
+  title: '&#b84dffCrystal Picker'
+  size: 54
+  fill-item:
+    material: GRAY_STAINED_GLASS_PANE
+    name: ' '
+  item-slots:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+  buttons:
+    back:
+      slot: 53
+      action: BACK_TO_CATEGORIES
+      material: ARROW
+      name: '&eBack'

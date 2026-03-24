@@ -1,0 +1,90 @@
+kits:
+  warrior:
+    name: Warrior
+    icon: IRON_SWORD
+    permission: ''
+    cooldown-seconds: 0
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_SWORD
+        meta:
+          ==: ItemMeta
+          enchants:
+            minecraft:sharpness: 1
+      - ==: org.bukkit.inventory.ItemStack
+        type: COOKED_BEEF
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        type: GOLDEN_APPLE
+        amount: 2
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: IRON_HELMET
+    offhand:
+  archer:
+    name: Archer
+    icon: BOW
+    permission: ''
+    cooldown-seconds: 5
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: BOW
+        meta:
+          ==: ItemMeta
+          enchants:
+            minecraft:power: 2
+      - ==: org.bukkit.inventory.ItemStack
+        type: ARROW
+        amount: 32
+      - ==: org.bukkit.inventory.ItemStack
+        type: STONE_SWORD
+      - ==: org.bukkit.inventory.ItemStack
+        type: COOKED_BEEF
+        amount: 12
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: CHAINMAIL_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: CHAINMAIL_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: LEATHER_HELMET
+    offhand:
+  tank:
+    name: Tank
+    icon: SHIELD
+    permission: ''
+    cooldown-seconds: 8
+    inventory:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_AXE
+      - ==: org.bukkit.inventory.ItemStack
+        type: COOKED_BEEF
+        amount: 24
+    armor:
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_BOOTS
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_LEGGINGS
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_CHESTPLATE
+      - ==: org.bukkit.inventory.ItemStack
+        type: DIAMOND_HELMET
+    offhand:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+    effects:
+      resistance:
+        type: RESISTANCE
+        duration: 2400
+        amplifier: 0
+        ambient: false
+        particles: true
+        icon: true
